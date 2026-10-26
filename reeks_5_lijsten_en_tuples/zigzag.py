@@ -22,7 +22,7 @@ def zigzag_traag(geheleGetallen):
   geheleGetallen.sort()
 
   for i in range(len(geheleGetallen)):
-    if ((i != 0 and i != len(geheleGetallen) - 1) and i % 2 != 0): #Niet 1ste of laatste + oneven
+    if ((i != 0 and i != len(geheleGetallen) - 1) and i % 2 != 0): # Niet 1ste of laatste + oneven
       wissel = geheleGetallen.pop(i)
       geheleGetallen.insert(i-1, wissel)
 
